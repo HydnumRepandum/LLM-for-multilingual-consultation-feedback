@@ -1,0 +1,9 @@
+FROM gemma3:27b
+
+# génération déterministe
+PARAMETER temperature 0
+# filtrage probabiliste (20 % de la probabilité cumulée)
+#PARAMETER top_p 0.2
+# conserver les 40 tokens les plus probables
+#PARAMETER top_k 40
+PARAMETER num_ctx 25000

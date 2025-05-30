@@ -41,4 +41,4 @@ The repository is organized into four primary directories:
 
 ---
 
-For further questions or collaborations, please reach out via the GitHub repository.
+For further questions, please reach out via the GitHub repository.

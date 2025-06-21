@@ -41,4 +41,4 @@ The repository is organized into four primary directories:
 
 ---
 
-For further questions, please reach out via the GitHub repository.
+For further questions, please reach out via the GitHub repository or at edgar.mathevet[at sign]unil.ch

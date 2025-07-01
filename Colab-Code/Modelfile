@@ -2,4 +2,9 @@ FROM gemma3:27b
 
 # génération déterministe
 PARAMETER temperature 0
-PARAMETER num_ctx 25000
+# probabilistic filtering
+PARAMETER top_p
+# keep the most probable tokens
+PARAMETER top_k
+# to set the model's context window size
+PARAMETER num_ctx 20000

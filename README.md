@@ -32,7 +32,7 @@ The repository is organized into four primary directories:
 
 3. **Evaluation-Confusion-Matrix**
 
-   * Provides a concise R script utilized to evaluate the accuracy of the analysis through confusion matrices.
+   * Provides a concise python script utilized to evaluate the accuracy of the analysis through confusion matrices.
 
 4. **Output-Excel**
 

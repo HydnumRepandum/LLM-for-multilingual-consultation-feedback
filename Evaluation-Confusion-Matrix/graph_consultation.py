@@ -348,7 +348,7 @@ for file_name in files_to_process:
     ax.barh(cleaned_counts.index, cleaned_counts.values, color=plt.cm.tab20.colors)
 
     ax.set_xlabel("Number of responses", fontsize=12)
-    ax.set_ylabel("Themes", fontsize=12)
+    ax.set_ylabel("Thematics", fontsize=12)
     ax.set_title(
         f"Distribution of thematics\nNumber of responses: {cleaned_counts.sum()}",
         fontsize=16,

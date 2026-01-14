@@ -30,9 +30,10 @@ The repository is organized into four primary directories:
    * Comprises source documents used for the research.
    * Includes PDF files with original stakeholder opinions, covering letters, and the synthesis of consultation results provided by relevant authorities.
 
-3. **Evaluation-Confusion-Matrix**
+3. **Evaluation-Confusion-Matrix and Cohen's Kappa**
 
    * Provides a concise python script utilized to evaluate the accuracy of the analysis through confusion matrices and how we obtain our graph when we dont want to re-run the whole architecture.
+   * The code used to calculate Cohen's Kappa with pairwise complete observations
 
 4. **Output-Excel**
 

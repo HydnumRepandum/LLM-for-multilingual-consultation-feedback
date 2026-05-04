@@ -39,10 +39,10 @@ M4 = np.array([
 
 matrices = [M1, M2, M3, M4]
 base_titles = [
-    "Adjustment of Interest on Arrears — Proposition One",
-    "Adjustment of Interest on Arrears — Proposition Two",
-    "Imprescriptibility of Murder",
-    "Lowering Import Tax Exemption"
+    "Interest rate case; Proposition One\n — Low salience / High complexity —",
+    "Interest rate case; Proposition Two\n — Low salience / High complexity —",
+    "Imprescriptibility of Murder case\n — High salience / Low complexity —",
+    "Import tax case\n — High salience / High complexity —"
 ]
 
 x_labels = ["Negative", "Neutral", "Positive"]
@@ -50,7 +50,7 @@ y_labels = ["Positive", "Neutral", "Negative"]
 
 fig, axes = plt.subplots(2, 2, figsize=(13, 12))
 fig.suptitle(
-    "Confusion Matrices for Sentiment Classification\n across Policy Cases (Gemma3:27b temp=0)",
+    "Confusion Matrices for Sentiment Classification \nacross Policy Cases and Gormley Typology (Gemma3:27b temp=0)",
     fontsize=20,
     y=0.98
 )
@@ -84,8 +84,8 @@ for ax, M, base_title in zip(axes.flatten(), matrices, base_titles):
     ax.set_yticks(np.arange(3))
     ax.set_yticklabels(y_labels, fontsize=11)
 
-    ax.set_xlabel("Prediction", labelpad=8)
-    ax.set_ylabel("Reference", labelpad=18)
+    ax.set_xlabel("LLM classification", labelpad=8)
+    ax.set_ylabel("Administrative report classification", labelpad=18)
 
 
 plt.tight_layout(rect=[0, 0, 1, 0.95], pad=2)
@@ -94,6 +94,7 @@ plt.tight_layout(rect=[0, 0, 1, 0.95], pad=2)
 cbar = fig.colorbar(im, ax=axes.ravel().tolist(), shrink=0.75, pad=0.02)
 cbar.set_label("Count")
 
+plt.savefig('gemma_temp_0.png', bbox_inches='tight')
 plt.show()
 
 """Gemma High temperature"""
@@ -128,10 +129,10 @@ M4 = np.array([
 
 matrices = [M1, M2, M3, M4]
 base_titles = [
-    "Adjustment of Interest on Arrears — Proposition One",
-    "Adjustment of Interest on Arrears — Proposition Two",
-    "Imprescriptibility of Murder",
-    "Lowering Import Tax Exemption"
+    "Interest rate case; Proposition One\n — Low salience / High complexity —",
+    "Interest rate case; Proposition Two\n — Low salience / High complexity —",
+    "Imprescriptibility of Murder case\n — High salience / Low complexity —",
+    "Import tax case\n — High salience / High complexity —"
 ]
 
 x_labels = ["Negative", "Neutral", "Positive"]
@@ -139,7 +140,7 @@ y_labels = ["Positive", "Neutral", "Negative"]
 
 fig, axes = plt.subplots(2, 2, figsize=(13, 12))
 fig.suptitle(
-    "Confusion Matrices for Sentiment Classification\n across Policy Cases (Gemma3:27b temp=0.9)",
+    "Confusion Matrices for Sentiment Classification \nacross Policy Cases and Gormley Typology (Gemma3:27b temp=0.9)",
     fontsize=20,
     y=0.98
 )
@@ -182,6 +183,7 @@ plt.tight_layout(rect=[0, 0, 1, 0.95], pad=2)
 cbar = fig.colorbar(im, ax=axes.ravel().tolist(), shrink=0.75, pad=0.02)
 cbar.set_label("Count")
 
+plt.savefig('gemma_temp_09.png', bbox_inches='tight')
 plt.show()
 
 """GPT-5-mini"""
@@ -216,10 +218,10 @@ M4 = np.array([
 
 matrices = [M1, M2, M3, M4]
 base_titles = [
-    "Adjustment of Interest on Arrears — Proposition One",
-    "Adjustment of Interest on Arrears — Proposition Two",
-    "Imprescriptibility of Murder",
-    "Lowering Import Tax Exemption"
+    "Interest rate case; Proposition One\n — Low salience / High complexity —",
+    "Interest rate case; Proposition Two\n — Low salience / High complexity —",
+    "Imprescriptibility of Murder case\n — High salience / Low complexity —",
+    "Import tax case\n — High salience / High complexity —"
 ]
 
 x_labels = ["Negative", "Neutral", "Positive"]
@@ -227,7 +229,7 @@ y_labels = ["Positive", "Neutral", "Negative"]
 
 fig, axes = plt.subplots(2, 2, figsize=(13, 12))
 fig.suptitle(
-    "Confusion Matrices for Sentiment Classification\n across Policy Cases (GPT-5-mini)",
+    "Confusion Matrices for Sentiment Classification \nacross Policy Cases and Gormley Typology (GPT-5-mini)",
     fontsize=20,
     y=0.98
 )
@@ -270,4 +272,5 @@ plt.tight_layout(rect=[0, 0, 1, 0.95], pad=2)
 cbar = fig.colorbar(im, ax=axes.ravel().tolist(), shrink=0.75, pad=0.02)
 cbar.set_label("Count")
 
+plt.savefig('gpt_5_mini.png', bbox_inches='tight')
 plt.show()

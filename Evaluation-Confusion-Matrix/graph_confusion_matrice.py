@@ -172,8 +172,8 @@ for ax, M, base_title in zip(axes.flatten(), matrices, base_titles):
     ax.set_yticks(np.arange(3))
     ax.set_yticklabels(y_labels, fontsize=11)
 
-    ax.set_xlabel("Prediction", labelpad=8)
-    ax.set_ylabel("Reference", labelpad=18)
+    ax.set_xlabel("LLM classification", labelpad=8)
+    ax.set_ylabel("Administrative report classification", labelpad=18)
 
 
 plt.tight_layout(rect=[0, 0, 1, 0.95], pad=2)
@@ -260,8 +260,8 @@ for ax, M, base_title in zip(axes.flatten(), matrices, base_titles):
     ax.set_yticks(np.arange(3))
     ax.set_yticklabels(y_labels, fontsize=11)
 
-    ax.set_xlabel("Prediction", labelpad=8)
-    ax.set_ylabel("Reference", labelpad=18)
+    ax.set_xlabel("LLM classification", labelpad=8)
+    ax.set_ylabel("Administrative report classification", labelpad=18)
 
 
 plt.tight_layout(rect=[0, 0, 1, 0.95], pad=2)
